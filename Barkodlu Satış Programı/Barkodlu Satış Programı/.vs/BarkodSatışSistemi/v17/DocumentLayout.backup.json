@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khada\\OneDrive\\Masa\u00FCst\u00FC\\Barkodlu Sat\u0131\u015F Program\u0131\\Barkodlu Sat\u0131\u015F Program\u0131\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3ECB16A-8F85-455C-A038-F9B8C178ADCB}|BarkodSat\u0131\u015FSistemi\\BarkodSat\u0131\u015FSistemi.csproj|c:\\users\\khada\\onedrive\\masa\u00FCst\u00FC\\barkodlu sat\u0131\u015F program\u0131\\barkodlu sat\u0131\u015F program\u0131\\barkodsat\u0131\u015Fsistemi\\properties\\licenses.licx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F3ECB16A-8F85-455C-A038-F9B8C178ADCB}|BarkodSat\u0131\u015FSistemi\\BarkodSat\u0131\u015FSistemi.csproj|solutionrelative:barkodsat\u0131\u015Fsistemi\\properties\\licenses.licx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "licenses.licx",
+              "DocumentMoniker": "C:\\Users\\khada\\OneDrive\\Masa\u00FCst\u00FC\\Barkodlu Sat\u0131\u015F Program\u0131\\Barkodlu Sat\u0131\u015F Program\u0131\\BarkodSat\u0131\u015FSistemi\\Properties\\licenses.licx",
+              "RelativeDocumentMoniker": "BarkodSat\u0131\u015FSistemi\\Properties\\licenses.licx",
+              "ToolTip": "C:\\Users\\khada\\OneDrive\\Masa\u00FCst\u00FC\\Barkodlu Sat\u0131\u015F Program\u0131\\Barkodlu Sat\u0131\u015F Program\u0131\\BarkodSat\u0131\u015FSistemi\\Properties\\licenses.licx",
+              "RelativeToolTip": "BarkodSat\u0131\u015FSistemi\\Properties\\licenses.licx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-03T20:29:23.683Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

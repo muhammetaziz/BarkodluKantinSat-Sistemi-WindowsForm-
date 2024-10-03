@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3ECB16A-8F85-455C-A038-F9B8C178ADCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BarkodSatışSistemi</RootNamespace>
+    <AssemblyName>BarkodSatışSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.16.0.461\lib\net472\Microsoft.Build.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Framework.16.0.461\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Components, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.Data.Tools.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Contracts, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.Data.Tools.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Tasks.Sql, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.Data.Tools.Schema.Tasks.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Utilities.Sql, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.Data.Tools.Schema.Utilities.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.Data.Tools.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=15.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dac, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.SqlServer.Dac.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dac.Extensions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.SqlServer.Dac.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=15.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.TransactSql.ScriptDom, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.DacFx.150.4769.1\lib\net46\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Setup.Configuration.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Setup.Configuration.Interop.1.16.30\lib\net35\Microsoft.VisualStudio.Setup.Configuration.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RDLCReportRunner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RDLCReportRunner.1.0.0\lib\RDLCReportRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlPackage, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Tools.Msbuild.16.0.62004.28040\lib\net46\SqlPackage.exe</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.5.24\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barkod.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodDBDataSet.cs">
+      <DependentUpon>BarkodDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarkodDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarkodDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodDBdsstok.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarkodDBdsstok.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarkodSatısProgramı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarkodSatısProgramı.Designer.cs">
+      <DependentUpon>BarkodSatısProgramı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="barModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="barModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAyarlar.Designer.cs">
+      <DependentUpon>fAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdetaygöster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdetaygöster.Designer.cs">
+      <DependentUpon>Fdetaygöster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ffiyatguncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ffiyatguncelleme.Designer.cs">
+      <DependentUpon>Ffiyatguncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flogin.Designer.cs">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRaporGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRaporGoster.Designer.cs">
+      <DependentUpon>FRaporGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fstok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fstok.Designer.cs">
+      <DependentUpon>fstok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUrunGirisLsti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUrunGirisLsti.Designer.cs">
+      <DependentUpon>FUrunGirisLsti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FurunGrubekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FurunGrubekle.Designer.cs">
+      <DependentUpon>FurunGrubekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelir_gider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelir_gider.Designer.cs">
+      <DependentUpon>gelir_gider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HizliUrun.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HizliUrunEklemeButon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HizliUrunEklemeButon.Designer.cs">
+      <DependentUpon>HizliUrunEklemeButon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islem.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="islemler.cs" />
+    <Compile Include="islemozet.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="kgorevler.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nakit_Kart_odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nakit_Kart_odeme.Designer.cs">
+      <DependentUpon>Nakit_Kart_odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlama.Designer.cs">
+      <DependentUpon>Raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="raporlar.cs" />
+    <Compile Include="Sabit.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Satis.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SatisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisForm.Designer.cs">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokHareket.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Terazi.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Urun.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGrup.cs">
+      <DependentUpon>barModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Yazdir.cs" />
+    <EmbeddedResource Include="BarkodSatısProgramı.resx">
+      <DependentUpon>BarkodSatısProgramı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAyarlar.resx">
+      <DependentUpon>fAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdetaygöster.resx">
+      <DependentUpon>Fdetaygöster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ffiyatguncelleme.resx">
+      <DependentUpon>Ffiyatguncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flogin.resx">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRaporGoster.resx">
+      <DependentUpon>FRaporGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fstok.resx">
+      <DependentUpon>fstok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUrunGirisLsti.resx">
+      <DependentUpon>FUrunGirisLsti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FurunGrubekle.resx">
+      <DependentUpon>FurunGrubekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelir_gider.resx">
+      <DependentUpon>gelir_gider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HizliUrunEklemeButon.resx">
+      <DependentUpon>HizliUrunEklemeButon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nakit_Kart_odeme.resx">
+      <DependentUpon>Nakit_Kart_odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlama.resx">
+      <DependentUpon>Raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGenel.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStok.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStokizle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisForm.resx">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BarkodDBDataSet.xsc">
+      <DependentUpon>BarkodDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarkodDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarkodDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarkodDBDataSet.xss">
+      <DependentUpon>BarkodDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarkodDBDataSet1.xsc">
+      <DependentUpon>BarkodDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BarkodDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarkodDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarkodDBDataSet1.xss">
+      <DependentUpon>BarkodDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BarkodDBdsstok.xsc">
+      <DependentUpon>BarkodDBdsstok.xsd</DependentUpon>
+    </None>
+    <None Include="BarkodDBdsstok.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarkodDBdsstok.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarkodDBdsstok.xss">
+      <DependentUpon>BarkodDBdsstok.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="barModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>barModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="barModel.edmx.diagram">
+      <DependentUpon>barModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\islemozet.datasource" />
+    <None Include="Properties\DataSources\Urun.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BarkodDB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BarkodDB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>BarkodDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="barModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>barModel.edmx</DependentUpon>
+      <LastGenOutput>barModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="barModel.edmx.sql" />
+    <Content Include="barModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>barModel.edmx</DependentUpon>
+      <LastGenOutput>barModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

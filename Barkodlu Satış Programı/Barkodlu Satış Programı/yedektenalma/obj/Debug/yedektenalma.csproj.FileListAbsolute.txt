@@ -1,0 +1,10 @@
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\bin\Debug\yedektenalma.exe.config
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\bin\Debug\yedektenalma.exe
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\bin\Debug\yedektenalma.pdb
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.Form1.resources
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.Properties.Resources.resources
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.exe
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.pdb
+C:\Users\asus\source\repos\yedektenalma\yedektenalma\obj\Debug\yedektenalma.csproj.AssemblyReference.cache

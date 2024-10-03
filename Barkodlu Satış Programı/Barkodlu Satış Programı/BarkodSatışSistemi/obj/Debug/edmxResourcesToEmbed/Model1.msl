@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BarkodDBModelStoreContainer" CdmEntityContainer="BarkodDBEntities">
+    <EntitySetMapping Name="Barkod">
+      <EntityTypeMapping TypeName="BarkodDBModel.Barkod">
+        <MappingFragment StoreEntitySet="Barkod">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Barkod1" ColumnName="Barkod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HizliUrun">
+      <EntityTypeMapping TypeName="BarkodDBModel.HizliUrun">
+        <MappingFragment StoreEntitySet="HizliUrun">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="islem">
+      <EntityTypeMapping TypeName="BarkodDBModel.islem">
+        <MappingFragment StoreEntitySet="islem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="islemNo" ColumnName="islemNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="islemozet">
+      <EntityTypeMapping TypeName="BarkodDBModel.islemozet">
+        <MappingFragment StoreEntitySet="islemozet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="islemNo" ColumnName="islemNo" />
+          <ScalarProperty Name="iade" ColumnName="iade" />
+          <ScalarProperty Name="odemeSekli" ColumnName="odemeSekli" />
+          <ScalarProperty Name="Nakit" ColumnName="Nakit" />
+          <ScalarProperty Name="Kart" ColumnName="Kart" />
+          <ScalarProperty Name="Gelir" ColumnName="Gelir" />
+          <ScalarProperty Name="Gider" ColumnName="Gider" />
+          <ScalarProperty Name="AlisFiyatToplam" ColumnName="AlisFiyatToplam" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="BarkodDBModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="adSoyad" ColumnName="adSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Satis" ColumnName="Satis" />
+          <ScalarProperty Name="Rapor" ColumnName="Rapor" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="UrunGiris" ColumnName="UrunGiris" />
+          <ScalarProperty Name="ayarlar" ColumnName="ayarlar" />
+          <ScalarProperty Name="Fiyatguncelleme" ColumnName="Fiyatguncelleme" />
+          <ScalarProperty Name="Yedekleme" ColumnName="Yedekleme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sabit">
+      <EntityTypeMapping TypeName="BarkodDBModel.Sabit">
+        <MappingFragment StoreEntitySet="Sabit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KartKomisyom" ColumnName="KartKomisyom" />
+          <ScalarProperty Name="Yazici" ColumnName="Yazici" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Satis">
+      <EntityTypeMapping TypeName="BarkodDBModel.Satis">
+        <MappingFragment StoreEntitySet="Satis">
+          <ScalarProperty Name="SatisId" ColumnName="SatisId" />
+          <ScalarProperty Name="IslemNo" ColumnName="IslemNo" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+          <ScalarProperty Name="SatisFiyat" ColumnName="SatisFiyat" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="KdvTutari" ColumnName="KdvTutari" />
+          <ScalarProperty Name="OdemeSekli" ColumnName="OdemeSekli" />
+          <ScalarProperty Name="Iade" ColumnName="Iade" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StokHareket">
+      <EntityTypeMapping TypeName="BarkodDBModel.StokHareket">
+        <MappingFragment StoreEntitySet="StokHareket">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terazi">
+      <EntityTypeMapping TypeName="BarkodDBModel.Terazi">
+        <MappingFragment StoreEntitySet="Terazi">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TeraziOnEk" ColumnName="TeraziOnEk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="BarkodDBModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="Acıklama" ColumnName="Acıklama" />
+          <ScalarProperty Name="UrunGroup" ColumnName="UrunGroup" />
+          <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+          <ScalarProperty Name="SatisFiyat" ColumnName="SatisFiyat" />
+          <ScalarProperty Name="Kdvorani" ColumnName="Kdvorani" />
+          <ScalarProperty Name="Kdvtutari" ColumnName="Kdvtutari" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Onay" ColumnName="Onay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrunGrup">
+      <EntityTypeMapping TypeName="BarkodDBModel.UrunGrup">
+        <MappingFragment StoreEntitySet="UrunGrup">
+          <ScalarProperty Name="UrubId" ColumnName="UrubId" />
+          <ScalarProperty Name="UrunGAd" ColumnName="UrunGAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
